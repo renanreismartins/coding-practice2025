@@ -1,2 +1,2 @@
-rootProject.name = "interview-prep2025"
+rootProject.name = "coding-exercise2025"
 
