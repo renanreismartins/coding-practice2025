@@ -1,6 +1,5 @@
 package dynamic;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -13,7 +12,7 @@ public class CanSumMemoized {
         if (memo.containsKey(target)) return memo.get(target);
 
         boolean canSum = canSum(target - numbers.getFirst(), numbers, memo)
-                || canSum(target, new ArrayList<>(numbers.subList(1, numbers.size())), memo);
+                || canSum(target, numbers.subList(1, numbers.size()), memo);
 
         memo.put(target, canSum);
         return memo.get(target);
