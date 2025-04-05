@@ -11,6 +11,7 @@ public class CanSumSemiFunctional {
 
         for (Integer number : numbers) {
             if (canSum(target - number, numbers.subList(1, numbers.size()))) return true;
+            if (canSum(target - number, numbers)) return true;
         }
 
         return false;
