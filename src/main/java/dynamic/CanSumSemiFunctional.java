@@ -10,7 +10,6 @@ public class CanSumSemiFunctional {
         if (numbers.isEmpty()) return false;
 
         for (Integer number : numbers) {
-            if (canSum(target - number, numbers.subList(1, numbers.size()))) return true;
             if (canSum(target - number, numbers)) return true;
         }
 
